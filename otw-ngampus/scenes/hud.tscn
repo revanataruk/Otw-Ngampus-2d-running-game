@@ -1,0 +1,79 @@
+[gd_scene load_steps=3 format=3 uid="uid://lyf4a3sklk1o"]
+
+[ext_resource type="FontFile" uid="uid://s15272omc2m3" path="res://assets/fonts/retro.ttf" id="1_xwrdd"]
+[ext_resource type="Texture2D" uid="uid://cacq8dhmu6ep0" path="res://assets/img/background/SignBoard.png" id="2_oo0fn"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_right = 183.0
+offset_bottom = 54.0
+theme_override_fonts/font = ExtResource("1_xwrdd")
+theme_override_font_sizes/font_size = 40
+text = "SCORE: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -268.5
+offset_top = 27.0
+offset_right = 268.5
+offset_bottom = 81.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_xwrdd")
+theme_override_font_sizes/font_size = 19
+text = "PRESS SPACE TO BERANGKAT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScoreLabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -318.0
+offset_bottom = 54.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_xwrdd")
+theme_override_font_sizes/font_size = 40
+text = "HIGH SCORE: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartLabel2" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -268.5
+offset_top = -41.0
+offset_right = 268.5
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_xwrdd")
+theme_override_font_sizes/font_size = 40
+text = "OTW NGAMPUS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SignLogo" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -78.5
+offset_top = -200.5
+offset_right = 78.5
+offset_bottom = -45.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_oo0fn")
+expand_mode = 1
